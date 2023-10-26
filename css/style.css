@@ -1,0 +1,189 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+a:hover {
+    transition: 0.1s;
+    color: #37a1f7;
+}
+
+/* Navbar */
+#navbar {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #ddd;
+}
+
+#navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* conteudo principal */
+.container {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #4e4e4e;
+}
+
+#posts-container {
+    flex: 3 1 0;
+}
+
+#posts-container h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.post {
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+}
+
+.post:hover {
+    transition: 0.5s;
+    transform: scale(0.98);
+}
+
+.post img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.title,
+.description {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+/* barra lateral */
+#sidebar {
+    flex: 1 1 0;
+}
+
+#perfil-bar,
+#contact,
+#tags {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#perfil {
+    max-width: 15rem;
+    border-radius: 100rem;
+    margin-bottom: 1rem;
+    border: 5px solid #aaa;
+}
+
+#perfil-bar h4,
+#contact h4,
+#tags h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#perfil-bar form {
+    display: flex;
+}
+
+#perfil-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+}
+
+#perfil-bar input[type='submit'] {
+    cursor: pointer;
+    background-color: #37a1f7;
+    color: #fff;
+    border: none;
+}
+
+#icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 5px;
+    /* dá um espacinho entre o ícone e o texto */
+    vertical-align: middle;
+    /* alinha o ícone verticalmente no centro do texto */
+}
+
+#contact li {
+    align-items: center;
+    padding: 0.3rem;
+}
+
+#contact li:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    border-radius: 10rem;
+    max-width: 7rem;
+}
+
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tags-container a {
+    background-color: #ddd;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+/* rodape */
+#footer {
+    border-top: 2px solid #ddd;
+    padding: 3rem;
+    text-align: center;
+}
+
+#footer h2,
+#footer p {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 450px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #side-bar {
+        max-width: 90%;        
+    }
+}
